@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Consultoria OaZ — Especialista em Operações Industriais e Empresariais. Orlei Zani. +28% em resultados. Diagnóstico gratuito. Brasil.">
+<meta name="keywords" content="Consultoria Empresarial, Consultoria Industrial, Gestão Empresarial, Operações Industriais, KPIs, Liderança, Orlei Zani, OaZ, Brasil">
+<meta property="og:title" content="Consultoria OaZ | Sua empresa está funcionando por você — ou apesar de você?">
+<meta property="og:description" content="Estruturamos empresas e indústrias que dependem do dono para funcionar. +28% em resultados. Diagnóstico gratuito de 1 hora.">
+<title>Consultoria OaZ | Gestão · Operações · Liderança</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#0A0A0A;color:#fff;min-height:100vh}
+
+/* ── HERO ── */
+.hero{background:linear-gradient(135deg,#0F2547 0%,#1B3A6B 60%,#0F2547 100%);padding:4rem 2rem 3rem;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 50% 0%,rgba(184,134,11,0.15) 0%,transparent 70%);pointer-events:none}
+.hero-logo{display:flex;flex-direction:column;align-items:center;margin-bottom:2rem}
+.logo-svg{width:120px;height:96px}
+.logo-tagline{font-size:9px;color:#7A6020;letter-spacing:3px;margin-top:6px}
+.hero-eyebrow{font-size:11px;color:#B8860B;letter-spacing:4px;margin-bottom:1rem}
+.hero-headline{font-size:clamp(22px,4vw,38px);font-weight:700;color:#fff;line-height:1.3;margin-bottom:1.25rem;max-width:700px;margin-left:auto;margin-right:auto}
+.hero-headline span{color:#F5D060}
+.hero-sub{font-size:clamp(14px,2vw,17px);color:#C8C8C8;line-height:1.8;max-width:600px;margin:0 auto 2rem}
+.hero-cta{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem}
+.btn-gold{background:#B8860B;color:#0A0A0A;padding:16px 32px;border-radius:10px;font-size:16px;font-weight:700;text-decoration:none;letter-spacing:.5px;transition:transform .15s,opacity .15s}
+.btn-gold:hover{transform:translateY(-2px);opacity:.9}
+.btn-outline{background:transparent;border:2px solid #B8860B;color:#F5D060;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:700;text-decoration:none;letter-spacing:.5px;transition:transform .15s,opacity .15s}
+.btn-outline:hover{transform:translateY(-2px);opacity:.9}
+.badges{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.badge{background:#0F2547;border:0.5px solid #B8860B;border-radius:20px;padding:4px 14px;font-size:10px;color:#B8860B}
+
+/* ── URGENCIA ── */
+.urgencia{background:#111;border-top:2px solid #B8860B;border-bottom:2px solid #B8860B;padding:1.25rem 2rem;text-align:center}
+.urgencia p{font-size:clamp(13px,2vw,15px);color:#C8C8C8;line-height:1.7}
+.urgencia strong{color:#F5D060}
+
+/* ── PAGE ── */
+.page{max-width:1100px;margin:0 auto;padding:2.5rem 2rem 3rem}
+
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2.5rem}
+.stat{background:#111;border:0.5px solid #B8860B;border-radius:12px;padding:1.5rem .5rem;text-align:center;position:relative;overflow:hidden}
+.stat::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,transparent,#B8860B,transparent)}
+.stat-num{font-size:clamp(28px,4vw,36px);font-weight:700;color:#B8860B;font-family:Georgia,serif}
+.stat-label{font-size:11px;color:#999;margin-top:6px;line-height:1.5}
+
+.divider{height:0.5px;background:#B8860B;opacity:.2;margin:2rem 0}
+.section-title{font-size:11px;color:#B8860B;letter-spacing:4px;text-align:center;margin-bottom:1.25rem}
+
+/* Dor */
+.dor-box{background:#111;border-left:4px solid #B8860B;border-radius:0 12px 12px 0;padding:2rem;margin-bottom:1.5rem}
+.dor-headline{font-size:clamp(18px,3vw,24px);font-weight:700;color:#F5D060;margin-bottom:1rem;line-height:1.4}
+.dor-list{list-style:none;padding:0}
+.dor-list li{font-size:14px;color:#C8C8C8;padding:8px 0;border-bottom:0.5px solid #1a1a1a;line-height:1.6}
+.dor-list li:last-child{border:none}
+.dor-list li::before{content:"→ ";color:#B8860B;font-weight:700}
+.dor-resposta{font-size:15px;color:#F5D060;font-weight:700;margin-top:1.25rem;line-height:1.6}
+
+/* Sobre */
+.sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:1.5rem}
+.sobre-text{font-size:14px;color:#C8C8C8;line-height:1.9}
+.sobre-text strong{color:#F5D060}
+.diferenciais{background:#111;border-radius:12px;padding:1.5rem;border:0.5px solid #222}
+.diferencial-title{font-size:12px;color:#B8860B;letter-spacing:3px;margin-bottom:1rem}
+.diferencial-item{font-size:13px;color:#C8C8C8;padding:6px 0;border-bottom:0.5px solid #1a1a1a;line-height:1.5}
+.diferencial-item:last-child{border:none}
+.diferencial-item::before{content:"✓ ";color:#B8860B;font-weight:700}
+
+/* Serviços */
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-bottom:1.5rem}
+.service{background:#111;border-left:3px solid #B8860B;border-radius:0 8px 8px 0;padding:1rem 1.25rem}
+.service-title{font-size:14px;font-weight:700;color:#F5D060;margin-bottom:6px}
+.service-text{font-size:12px;color:#999;line-height:1.6;margin-bottom:6px}
+.service-list{padding-left:0;list-style:none}
+.service-list li{font-size:11px;color:#888;padding:3px 0;border-bottom:0.5px solid #1a1a1a;line-height:1.5}
+.service-list li::before{content:"▸ ";color:#B8860B}
+
+/* Prova social */
+.prova-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:1.5rem}
+.prova-card{background:#111;border-radius:12px;padding:1.25rem;border-top:2px solid #B8860B;text-align:center}
+.prova-num{font-size:28px;font-weight:700;color:#B8860B;font-family:Georgia,serif;margin-bottom:4px}
+.prova-empresa{font-size:11px;color:#F5D060;font-weight:700;margin-bottom:4px}
+.prova-desc{font-size:11px;color:#888;line-height:1.5}
+
+/* Depoimento */
+.depoimento{background:#111;border:0.5px solid #B8860B;border-radius:12px;padding:2rem;text-align:center;margin-bottom:1.5rem}
+.dep-texto{font-size:15px;color:#C8C8C8;line-height:1.8;font-style:italic;margin-bottom:1rem}
+.dep-autor{font-size:12px;color:#B8860B;font-weight:700;letter-spacing:1px}
+
+/* Ferramentas */
+.tools-wrap{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-bottom:1.5rem}
+.tool-tag{background:#111;border:0.5px solid #B8860B;border-radius:20px;padding:5px 14px;font-size:11px;color:#B8860B}
+
+/* CTA Final */
+.cta-final{background:linear-gradient(135deg,#0F2547,#1B3A6B);border:1px solid #B8860B;border-radius:16px;padding:3rem 2rem;text-align:center;margin-bottom:1.5rem}
+.cta-final-title{font-size:clamp(20px,3vw,28px);font-weight:700;color:#F5D060;margin-bottom:1rem;line-height:1.4}
+.cta-final-sub{font-size:14px;color:#A0B8D8;margin-bottom:2rem;line-height:1.7}
+.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* Links */
+.links{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;margin-bottom:1.5rem}
+.link-btn{display:block;text-align:center;padding:14px;border-radius:10px;font-size:14px;font-weight:700;text-decoration:none;letter-spacing:1px}
+.link-primary{background:#B8860B;color:#0A0A0A;grid-column:1/-1}
+.link-secondary{background:transparent;border:1.5px solid #B8860B;color:#F5D060}
+
+/* Contact box */
+.contact-box{background:#111;border:0.5px solid #B8860B;border-radius:12px;padding:2rem;text-align:center;margin-bottom:2rem}
+.contact-title{font-size:11px;color:#B8860B;letter-spacing:3px;margin-bottom:1rem}
+.contact-name{font-size:18px;font-weight:700;color:#fff;margin-bottom:.25rem}
+.contact-role{font-size:11px;color:#B8860B;margin-bottom:1.25rem;letter-spacing:1px;line-height:1.6}
+.contact-item{font-size:14px;color:#999;margin-bottom:.6rem}
+.contact-item a{color:#F5D060;text-decoration:none}
+
+/* WhatsApp flutuante */
+.whatsapp-float{position:fixed;bottom:28px;right:28px;z-index:9999;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);text-decoration:none;transition:transform .2s,box-shadow .2s}
+.whatsapp-float:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(37,211,102,.6)}
+.whatsapp-float svg{width:32px;height:32px}
+
+.footer-pyramid{display:flex;justify-content:center;margin:2rem 0 .5rem}
+.footer{text-align:center;font-size:10px;color:#333;letter-spacing:2px;margin-top:.5rem}
+
+/* Responsive */
+@media(max-width:680px){
+  .hero{padding:3rem 1.5rem 2.5rem}
+  .page{padding:1.5rem 1.25rem 3rem}
+  .stats{grid-template-columns:repeat(3,1fr)}
+  .sobre-grid{grid-template-columns:1fr}
+  .services{grid-template-columns:1fr}
+  .prova-grid{grid-template-columns:repeat(3,1fr)}
+  .links{grid-template-columns:1fr}
+  .link-primary{grid-column:auto}
+  .whatsapp-float{bottom:20px;right:20px;width:54px;height:54px}
+}
+@media(min-width:681px) and (max-width:900px){
+  .services{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<!-- BOTÃO WHATSAPP FLUTUANTE -->
+<a class="whatsapp-float" href="https://wa.me/351913946469" target="_blank" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="26" cy="26" r="24" fill="#25D366"/>
+    <path d="M36 30.5c-.5-.25-3-1.5-3.5-1.7-.5-.2-.85-.25-1.2.25-.35.5-1.35 1.7-1.65 2.05-.3.35-.6.4-1.1.15-.5-.25-2.1-.75-4-2.4-1.5-1.3-2.5-2.9-2.8-3.4-.3-.5 0-.75.2-1 .25-.25.5-.6.75-.9.25-.3.35-.5.5-.85.15-.35.1-.65-.05-.9-.15-.25-1.2-2.85-1.65-3.9-.4-.95-.85-.8-1.15-.8H19c-.4 0-1 .15-1.55.75-1 1.1-2.5 2.45-2.5 5.05s1.7 5.15 1.95 5.5c.25.35 3.35 5.1 8.1 7.15 1.15.5 2.05.8 2.75.95 1.15.3 2.2.25 3.05.15.9-.15 2.8-1.15 3.2-2.25.4-1.1.4-2.05.25-2.25-.15-.2-.45-.3-.95-.55z" fill="white"/>
+  </svg>
+</a>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-logo">
+    <svg class="logo-svg" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#F5D060"/><stop offset="50%" style="stop-color:#B8860B"/><stop offset="100%" style="stop-color:#8B6508"/></linearGradient>
+        <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#F5D060"/><stop offset="100%" style="stop-color:#7A5200"/></linearGradient>
+        <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#9A6800"/><stop offset="100%" style="stop-color:#B8860B"/></linearGradient>
+      </defs>
+      <polygon points="100,10 40,100 160,100" fill="url(#g1)"/>
+      <polygon points="100,10 40,100 100,100" fill="url(#g2)" opacity="0.85"/>
+      <polygon points="100,10 160,100 100,100" fill="url(#g3)" opacity="0.95"/>
+      <line x1="100" y1="10" x2="100" y2="100" stroke="#F5D060" stroke-width="0.5" opacity="0.4"/>
+      <polygon points="100,10 40,100 160,100" fill="none" stroke="#F5D060" stroke-width="0.8"/>
+      <circle cx="100" cy="10" r="3" fill="#F5D060"/>
+      <circle cx="100" cy="10" r="7" fill="none" stroke="#F5D060" stroke-width="0.5" opacity="0.5"/>
+      <text x="100" y="130" text-anchor="middle" font-family="Georgia,serif" font-size="28" font-weight="700" fill="#B8860B" letter-spacing="4">OaZ</text>
+      <text x="100" y="148" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#F5D060" letter-spacing="4">CONSULTORIA</text>
+    </svg>
+    <div class="logo-tagline">GESTÃO &nbsp;·&nbsp; OPERAÇÕES &nbsp;·&nbsp; LIDERANÇA</div>
+  </div>
+
+  <div class="hero-eyebrow">CONSULTORIA EMPRESARIAL E INDUSTRIAL</div>
+  <h1 class="hero-headline">Sua empresa está funcionando <span>por você</span> — ou <span>apesar de você</span>?</h1>
+  <p class="hero-sub">Estruturamos empresas e indústrias que dependem do dono para funcionar. Com método, dados e execução real — fazemos sobrar resultado no caixa no fim do mês.</p>
+
+  <div class="hero-cta">
+    <a class="btn-gold" href="https://wa.me/351913946469" target="_blank">Quero meu diagnóstico gratuito</a>
+    <a class="btn-outline" href="#servicos">Ver como funciona</a>
+  </div>
+
+  <div class="badges">
+    <span class="badge">Brasil</span>
+    <span class="badge">Portugal</span>
+    <span class="badge">+25 anos</span>
+    <span class="badge">Empresas & Indústrias</span>
+  </div>
+</div>
+
+<!-- URGÊNCIA -->
+<div class="urgencia">
+  <p>Empresas que não estruturam a gestão hoje <strong>perdem competitividade amanhã</strong>. Cada mês sem método é margem desperdiçada, talento perdido e resultado que não vem.</p>
+</div>
+
+<!-- CONTEÚDO -->
+<div class="page">
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat"><div class="stat-num">+30%</div><div class="stat-label">Ganho médio em resultados</div></div>
+    <div class="stat"><div class="stat-num">+42%</div><div class="stat-label">Aumento de produtividade</div></div>
+    <div class="stat"><div class="stat-num">25+</div><div class="stat-label">Anos de experiência</div></div>
+  </div>
+
+  <!-- DOR -->
+  <div class="divider"></div>
+  <div class="section-title">VOCÊ SE IDENTIFICA?</div>
+  <div class="dor-box">
+    <div class="dor-headline">Reconhece algum destes cenários na sua empresa?</div>
+    <ul class="dor-list">
+      <li>Você trabalha 12 horas por dia mas o lucro não cresce na mesma proporção</li>
+      <li>Sua operação para quando você não está — tudo depende de você</li>
+      <li>Sua equipe entrega, mas ninguém sabe exatamente o que foi feito, por quem e com qual resultado</li>
+      <li>Você cresce no faturamento mas a margem não acompanha</li>
+      <li>Decisões são tomadas no feeling — sem dados, sem indicadores, sem previsibilidade</li>
+      <li>Você contratou e demitiu gestores mas o problema continua o mesmo</li>
+    </ul>
+    <div class="dor-resposta">Se você se identificou com pelo menos um desses pontos — não é coincidência. É falta de método. E isso tem solução.</div>
+  </div>
+
+  <!-- SOBRE -->
+  <div class="divider"></div>
+  <div class="section-title">SOBRE A OaZ</div>
+  <div class="sobre-grid">
+    <div class="sobre-text">
+      Possuímos experiência comprovada em gestão de <strong>empresas e indústrias</strong>, conduzindo equipes de alta performance através de uma cultura forte e confiança estabelecida entre todos.<br><br>
+      Cada empresa tem sua história. Cada caso é único. Por isso não aplicamos fórmulas prontas — personalizamos a gestão da sua organização de forma ágil, precisa e respeitosa com o que já foi construído.<br><br>
+      Diagnosticamos e melhoramos seus processos extraindo o melhor das <strong>pessoas, dos processos e dos produtos</strong>.
+    </div>
+    <div class="diferenciais">
+      <div class="diferencial-title">POR QUE A OaZ</div>
+      <div class="diferencial-item">Foco em execução — não em teoria</div>
+      <div class="diferencial-item">Linguagem empresarial, sem academicismos</div>
+      <div class="diferencial-item">Resultado mensurável desde a primeira semana</div>
+      <div class="diferencial-item">Adaptado à realidade de cada empresa</div>
+      <div class="diferencial-item">Baseado em dados, método e governança</div>
+      <div class="diferencial-item">25+ anos de resultado comprovado</div>
+    </div>
+  </div>
+
+  <!-- PROVA SOCIAL -->
+  <div class="divider"></div>
+  <div class="section-title">RESULTADOS REAIS</div>
+  <div class="prova-grid">
+    <div class="prova-card">
+      <div class="prova-num">+42%</div>
+      <div class="prova-empresa">Biotae Sylvestre</div>
+      <div class="prova-desc">Aumento de produtividade em 8 meses de consultoria</div>
+    </div>
+    <div class="prova-card">
+      <div class="prova-num">+60%</div>
+      <div class="prova-empresa">NS Alimentos</div>
+      <div class="prova-desc">Crescimento de faturamento com estrutura operacional</div>
+    </div>
+    <div class="prova-card">
+      <div class="prova-num">-40%</div>
+      <div class="prova-empresa">Perfect Foods</div>
+      <div class="prova-desc">Redução de custos operacionais em operação internacional</div>
+    </div>
+  </div>
+
+  <div class="depoimento">
+    <div class="dep-texto">"Em menos de 90 dias a operação tinha indicadores, processos definidos e a equipe sabia exatamente o que fazer. Pela primeira vez em anos consegui sair da operação e trabalhar no negócio."</div>
+    <div class="dep-autor">— Cliente OaZ · Setor de Saúde · Chapecó – SC</div>
+  </div>
+
+  <!-- SERVIÇOS -->
+  <div class="divider"></div>
+  <div class="section-title" id="servicos">SERVIÇOS</div>
+  <div class="services">
+    <div class="service">
+      <div class="service-title">Qualidade e Segurança</div>
+      <div class="service-text">Sistemas de qualidade, conformidade e auditoria.</div>
+      <ul class="service-list">
+        <li>GMP/BPF — Boas Práticas de Higiene e Fabricação</li>
+        <li>APPCC/HACCP — elaboração e implantação</li>
+        <li>ISO 9001, ISO 18001 e ISO 22000</li>
+        <li>Controle de Qualidade Total (TQC)</li>
+        <li>Qualificação e auditoria de fornecedores</li>
+        <li>Habilitação de plantas para mercado externo</li>
+      </ul>
+    </div>
+    <div class="service">
+      <div class="service-title">Gestão de Produção e Operações</div>
+      <div class="service-text">Estruturação e otimização de operações.</div>
+      <ul class="service-list">
+        <li>KPIs e OKRs — implantação e gestão de indicadores</li>
+        <li>Planejamento e Controle de Produção (PCP)</li>
+        <li>Reengenharia e melhoria de processos</li>
+        <li>OEE, OOE e eficiência operacional</li>
+        <li>Gestão de custos industriais e operacionais</li>
+        <li>Estudos de viabilidade técnico-econômica</li>
+      </ul>
+    </div>
+    <div class="service">
+      <div class="service-title">Manutenção e Confiabilidade</div>
+      <div class="service-text">Redução de paradas e aumento de vida útil dos ativos.</div>
+      <ul class="service-list">
+        <li>Planos de manutenção preventiva e preditiva</li>
+        <li>Análise de falhas e tratativa de anomalias</li>
+        <li>Eficiência em consumo de energia e água</li>
+        <li>Políticas de meio ambiente e sustentabilidade</li>
+      </ul>
+    </div>
+    <div class="service">
+      <div class="service-title">Gestão de Pessoas e Lideranças</div>
+      <div class="service-text">Desenvolvimento humano e estrutura organizacional.</div>
+      <ul class="service-list">
+        <li>Desenvolvimento de lideranças e PDIs</li>
+        <li>Estrutura de cargos, salários e meritocracia</li>
+        <li>Avaliação de desempenho e clima organizacional</li>
+        <li>Recrutamento, seleção e capacitação</li>
+        <li>Políticas internas e código de conduta</li>
+      </ul>
+    </div>
+    <div class="service">
+      <div class="service-title">Treinamentos & Educação Corporativa</div>
+      <div class="service-text">Capacitação técnica e gerencial sob medida.</div>
+      <ul class="service-list">
+        <li>APPCC/HACCP, BPF/GMP e normas ISO</li>
+        <li>KPIs, OKRs e sistema de gestão de metas</li>
+        <li>Liderança, feedbacks e métodos de abordagem</li>
+        <li>Custos operacionais (Markup) e OBZ</li>
+        <li>Metodologias ágeis — Scrum, Kanban, Design Thinking</li>
+        <li>Análise e Solução de Problemas (MASP)</li>
+      </ul>
+    </div>
+    <div class="service">
+      <div class="service-title">Consultoria Empresarial</div>
+      <div class="service-text">Estratégia e estruturação para empresas de todos os setores.</div>
+      <ul class="service-list">
+        <li>Diagnóstico e planejamento estratégico</li>
+        <li>Reestruturação e turnaround organizacional</li>
+        <li>Governança corporativa e compliance</li>
+        <li>Marketing, Vendas, Logística e Compras</li>
+        <li>Profissionalização da gestão empresarial</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FERRAMENTAS -->
+  <div class="divider"></div>
+  <div class="section-title">FERRAMENTAS & METODOLOGIAS</div>
+  <div class="tools-wrap">
+    <span class="tool-tag">OEE / OOE</span><span class="tool-tag">TPM</span>
+    <span class="tool-tag">PDCA</span><span class="tool-tag">Lean Manufacturing</span>
+    <span class="tool-tag">Kanban</span><span class="tool-tag">Scrum</span>
+    <span class="tool-tag">Design Thinking</span><span class="tool-tag">BSC</span>
+    <span class="tool-tag">OBZ</span><span class="tool-tag">KPIs / OKRs</span>
+    <span class="tool-tag">Management 3.0</span><span class="tool-tag">HACCP</span>
+    <span class="tool-tag">ISO 9001</span><span class="tool-tag">ISO 22000</span>
+    <span class="tool-tag">MASP</span><span class="tool-tag">5S</span>
+    <span class="tool-tag">SAP R/3</span><span class="tool-tag">IA & Automação</span>
+  </div>
+
+  <!-- CTA FINAL -->
+  <div class="divider"></div>
+  <div class="cta-final">
+    <div class="cta-final-title">Pronto para parar de carregar a empresa nas costas?</div>
+    <div class="cta-final-sub">Agende um diagnóstico gratuito de 1 hora. Sem compromisso. Vamos entender sua situação e mostrar o que é possível transformar.</div>
+    <div class="cta-buttons">
+      <a class="btn-gold" href="https://wa.me/351913946469" target="_blank">Agendar diagnóstico gratuito</a>
+      <a class="btn-outline" href="tel:+5566996839527">Ligar agora</a>
+    </div>
+  </div>
+
+  <!-- LINKS -->
+  <div class="divider"></div>
+  <div class="section-title">ACESSE</div>
+  <div class="links">
+    <a class="link-btn link-primary" href="https://orlei26.github.io" target="_blank">Ver Perfil Completo — Orlei Zani</a>
+    <a class="link-btn link-secondary" href="https://www.linkedin.com/in/orlei-zani-10413a21/" target="_blank">LinkedIn</a>
+    <a class="link-btn link-secondary" href="https://wa.me/351913946469" target="_blank">WhatsApp</a>
+    <a class="link-btn link-secondary" href="tel:+5566996839527">Telefone</a>
+  </div>
+
+  <!-- CONTATO -->
+  <div class="contact-box">
+    <div class="contact-title">FALE CONOSCO</div>
+    <div class="contact-name">Orlei Zani</div>
+    <div class="contact-role">HEAD DE OPERAÇÕES &nbsp;·&nbsp; DIRETOR INDUSTRIAL &nbsp;·&nbsp; CONSULTOR EXECUTIVO</div>
+    <div class="contact-item"><a href="https://wa.me/351913946469">WhatsApp: +351 913 946 469</a></div>
+    <div class="contact-item"><a href="tel:+5566996839527">Telefone: +55 66 99683-9527</a></div>
+    <div class="contact-item" style="margin-top:.75rem;font-size:11px;color:#444">Disponível para atuação presencial e híbrida em todo o Brasil</div>
+  </div>
+
+  <div class="footer-pyramid">
+    <svg width="40" height="32" viewBox="0 0 40 32">
+      <polygon points="20,2 2,30 38,30" fill="none" stroke="#B8860B" stroke-width="0.8" opacity="0.5"/>
+    </svg>
+  </div>
+  <div class="footer">CONSULTORIA OAZ &nbsp;·&nbsp; BRASIL &nbsp;·&nbsp; PORTUGAL</div>
+
+</div>
+</body>
+</html>
